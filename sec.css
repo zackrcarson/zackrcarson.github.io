@@ -1,0 +1,205 @@
+/* This is a comment in CSS */
+
+/* The first part of a stylesheet is a "reset" to fix undesirable default behaviour */
+
+/* Style all font awesome icons */
+
+
+.transbox {
+	margin-top:30px;
+
+	display: inline-block;
+	padding: 20px;
+	padding-top: 30px;
+	background-color: rgba(255,255,255,0.2);
+	
+	}	
+
+.inner-transbox {
+	width: 330px;
+	background-color: rgba(0,0,0,0.5);
+	border: outset rgba(255,255,255,.5);
+	border-width: 1 10px;
+	}
+	
+.icons .btn {
+	color: white;
+	font-size: 15px;
+	padding-right:30px;
+
+}
+
+.icons .btn:hover .fa-github:before{
+  color: Khaki;
+  content: "Github";
+  font-size:32px;
+  font-family: "Raleway", sans-serif;
+}
+
+.icons .btn:hover .fa-file-pdf-o:before{
+  color: Khaki;
+  content: "Resume";
+  font-size:32px;
+  font-family: "Raleway", sans-serif;
+}
+
+.icons .btn:hover .fa-envelope:before{
+  color: Khaki;
+  content: "Email";
+  font-size:32px;
+  font-family: "Raleway", sans-serif;
+}
+.about {
+	background: #FFFFFF;
+	padding-top: 20px;
+	border-top:10px double rgba(100,220,250,1); 
+	border-bottom: 10px double rgba(100,220,250,1); 
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	display: table;
+	width: 100%
+}
+
+/*.about .container a {
+  color: green;
+}*/
+
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(255,200,200,1);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgba(255,150,150,1);
+}
+
+.button:hover {background-color: rgba(255,175,175,1)}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+body {
+    margin: 0;
+}
+
+header, section, main, nav {
+    display: block;
+}
+
+header:after, section:after, main:after, nav:after {
+    content: " "; /* 1 */
+    display: block; /* 2 */
+    clear: both;
+}
+
+/* Once the fixes are done, we can get to the actual styles */
+
+html {
+    font-family: Geneva, Helvetica, Arial, sans-serif;
+    color: #383838;
+    background-color: #F8F8F8;
+}
+
+a {
+    color: #A61923;
+}
+
+header {
+    background-color: #A61923;
+    border-bottom: 5px solid #7D0918;
+    padding: 10px;
+}
+
+header, header a, header a:visited {
+    color: #EDEDED;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header h1, header nav {
+    text-align: center;
+}
+
+header nav a:not(:last-child) {
+    margin-right: 10px;
+}
+
+header h1, header nav, main {
+    max-width: 640px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#banner {
+    text-align: center;
+    margin: 0;
+    background-color: #7D0918;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+}
+
+.bio {
+    margin-top: 15px;
+    background-color: #D8D8D8;
+    padding: 10px;
+    border-bottom: 5px solid #B0B0B0;
+}
+
+.bio p {
+    margin: 0;
+}
+
+.bio img {
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #A0A0A0;
+}
+
+.bio address {
+    margin-top: 5px;
+    font-style: normal;
+    color: #585858;
+    text-align: right;
+    font-size: 90%;
+}
+
+h2 {
+    color: #A61923;
+}
+
+@media screen and (max-width: 640px) {
+    section {
+        padding: 0 10px;
+    }
+}
+
+
